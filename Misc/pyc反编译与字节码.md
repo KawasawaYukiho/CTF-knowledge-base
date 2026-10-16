@@ -1,13 +1,15 @@
 # pyc 反编译与字节码
 
-> **所属分类**：Misc ｜ **难度参考**：简单
+> **所属分类**：Misc
 > **适用题型**：拿到一个 `.pyc` 字节码文件，要求还原源码并从中取出被藏起来的字符串（常是 ASCII 数字数组或一段 Web 利用链演示）。
 
-## 一、知识点原理讲解
+## 一、知识点
 
 ### 1. pyc 是什么
 
-`.pyc` 是 Python 把 `.py` 源码编译后的**字节码缓存**，用来加快模块加载。它不是源码，但可以反编译回 Python 代码。Python 3.7+ 的文件结构：
+`.pyc` 是 Python 把 `.py` 源码编译后的**字节码缓存**，用来加快模块加载
+它不是源码，但可以反编译回 Python 代码
+Python 3.7+ 的文件结构：
 
 ```text
 [4 字节 magic number][4 字节 bit field][4 字节 mtime][4 字节 源码大小][marshal 序列化的 code object]
@@ -47,8 +49,8 @@ flag = "".join(chr(c) for c in codes)
   → 得结果
 ```
 
-- 别被大段 SSTI 教学代码带偏，结果常在最后几行。
-- Python 版本不匹配会反编译失败，换 pycdc 或对应 uncompyle6 版本。
+- 别被大段 SSTI 教学代码带偏，结果常在最后几行
+- Python 版本不匹配会反编译失败，换 pycdc 或对应 uncompyle6 版本
 
 ## 三、工具使用
 

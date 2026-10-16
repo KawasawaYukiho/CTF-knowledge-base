@@ -1,7 +1,6 @@
 # 个人网络安全 / CTF 知识体系
 
-> 一个 CTF 个人知识库，按知识点/技术主题沉淀 Crypto、Misc、Reverse、Web、Pwn 各方向的原理、解题套路与工具使用
-> 用于个人复习与持续积累
+一个 CTF 个人知识库，按知识点/技术主题沉淀 Crypto、Misc、Reverse、Web、Pwn 各方向的原理、解题套路与工具使用,大部分由豆姐生成，重要用于个人整理复习
 
 ## 📖 这个仓库
 
@@ -21,7 +20,7 @@ CTF-knowledge-base/
 ├── Misc/        
 ├── Reverse/     
 ├── Web/        
-├── Pwn/                 # 二进制：还没学
+├── Pwn/                 # 待补充
 ├── assets/images/<知识点>/
 └── (Crypto|Misc|Reverse|Web)/script/<知识点>/    解题脚本
     (Misc|Reverse)/challenge/<知识点>/
